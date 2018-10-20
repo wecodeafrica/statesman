@@ -23,8 +23,8 @@ statesman in their locality,
 been completed
 - Verify and track the promises of these political manifestos
 
-### heavy_plus_sign Proposed Stack
+### :heavy_plus_sign: Proposed Stack
 
-- :bulb _FrontEnd_: HTML, CSS | Bootstrap | Sass
-- :bulb _Backend_: NodeJs & Express
-- :bulb _Database_: MongoDb
+- :bulb: _FrontEnd_: HTML, CSS | Bootstrap | Sass
+- :bulb: _Backend_: NodeJs & Express
+- :bulb: _Database_: MongoDb
