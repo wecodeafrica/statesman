@@ -17,12 +17,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    res.render('signup');
+    res.render('register');
 });
 
 app.get('/forgot', (req, res) => {
-    res.render('forgotPassword');
+    res.render('forgot');
 });
+
+app.get('/login', ( req, res) => {
+    res.render('login')
+})
 
 
 app.listen(port, () => console.log(`server is listening on ${port}`));
