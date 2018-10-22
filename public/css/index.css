@@ -30,14 +30,14 @@
 .secondDiv p {
   font-size: 14px
 }
-.one {
-  /* margin: 20px 0; */
+.statesmanText h3 {
+  font-weight: bold
 }
 
 .politicalParties {
   line-height: 2px
 }
-.politicalParties h3 {
+.politicalParties h4 {
   font-weight: bold
 }
 .imageDiv img {
@@ -86,11 +86,22 @@
 }
 .top {
   margin: 0 auto;
+  line-height: 19px
 }
 
 .sign {
   margin: -10px 90px;
   font-size: 12px;
+  position: relative;
+  top: 14px;
+  left: 20px;
+}
+.orWith {
+  margin: -10px 90px;
+  font-size: 12px;
+  position: relative;
+  bottom: 10px;
+  left: 35px;
 }
 .statesman {
   width: 100%;
@@ -117,7 +128,7 @@
 .footer {
   float: left;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 100%;
   height: 20px;
   color: white;
