@@ -78,7 +78,9 @@
 }
 .forgot {
   margin-top: 2px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
 }
 
 .social {
@@ -118,8 +120,23 @@
 }
 .i {
   margin: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
  
 }
+.forgotpassword  {
+  position: relative;
+  top: 1px
+}
+a {
+  text-decoration: none
+}
+/* .f {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+} */
 .i a {
   font-size: 24;
   margin: auto;
