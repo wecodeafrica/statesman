@@ -27,6 +27,9 @@ app.get('/forgot', (req, res) => {
 app.get('/login', ( req, res) => {
     res.render('login')
 })
+app.get('/stateman', ( req, res) => {
+    res.render('stateman')
+})
 
 
 app.listen(port, () => console.log(`server is listening on ${port}`));
