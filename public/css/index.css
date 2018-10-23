@@ -157,10 +157,20 @@ a {
 
 
 /* footer */
+
 .top {
   background: white;
 }
 .footerHead {
   background :  rgb(17, 127, 57);;
   height: 10%;
+}
+
+.footerBody {
+  background: #007bff;
+  height: 70vh;
+}
+
+.footerFooter {
+  background: #007bff
 }
