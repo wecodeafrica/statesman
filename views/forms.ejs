@@ -1,257 +1,249 @@
 <% include partials/header %>
-<!-- <div class="container">
-  <div class="card p-5">
-    <div class="card-body"> 
-    <h1 class="card-title font-weight-bold mb-3">Basic Information</h1>
-    <form action="" class="form-group">
-        <div class="form-group row">
-            <label for="Politician's na,e" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input type="password" class="form-control w-50" id="inputPassword" placeholder="Password">
-              </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control w-50" id="inputPassword" placeholder="Password">
-            </div>
-          </div>
-
-          <div class="form-group row">
-              <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control w-50" id="inputPassword" placeholder="Password">
-              </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control w-50" id="inputPassword" placeholder="Password">
-                </div>
-              </div>
-    </form>
-  </div>
-
-  </div>
-</div> -->
 <div class="container">
 
+  <form action="" class="form-group">
+
+  
 <div class="card  mt-4 mb-4">
-    <div class="card-header">
-      Basic Information
-    </div>
-    <div class="card-body">
-        <form action="" class="form-group">
-            <div class="form-group row">
-                <label for="politicianName" class="col-sm-2 col-form-label">Politician Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control " id="PoliticianName" placeholder="Politician Name">
-                  </div>
-              </div>
-              <div class="form-group row">
-                <label for="runningParty" class="col-sm-2 col-form-label">Running party</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control " id="runningParty" placeholder="Running party">
-                </div>
-              </div>
-    
-              <div class="form-group row">
-                  <label for="hometown" class="col-sm-2 col-form-label">Hometown</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control " id="Hometown" placeholder="Hometown">
-                  </div>
-                </div>
-                <div class="form-group row">
-                    <label for="website" class="col-sm-2 col-form-label">website(url)</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="website" placeholder="website(url)">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                      <label for="socialMedia" class="col-sm-2 col-form-label">Social media</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control " id="social-Media" placeholder="Social media">
-                      </div>
-                    </div>
-          
-                    <div class="form-group row">
-                        <label for="manifesto" class="col-sm-2 col-form-label">Manifesto(url)</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control " id="manifesto" placeholder="Manifeto(url)">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                          <label for="currentOffice" class="col-sm-2 col-form-label">Political office</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="currentOffice" placeholder="Current political office">
-                          </div>
-                        </div>
-        </form>
-    </div>
-  </div> 
-    
-
-  <div class="card  mt-4">
-      <div class="card-header">
-        Biography
-      </div>
-      <div class="card-body">
-          <form action="" class="form-group">
-              <div class="form-group">
-                  <label for="exampleFormControlTextarea1">About Politician Name </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-          </form>
-      </div>
-    </div> 
-
-
-    <div class="card  mt-4">
-        <div class="card-header">
-          Education
+  <div class="card-header">
+    Basic Information
+  </div>
+  <div class="card-body">
+    <form action="" class="form-group">
+      <div class="form-group row">
+        <label for="politicianName" class="col-sm-2 col-form-label">Politician Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="PoliticianName" placeholder="Politician Name">
         </div>
-        <div class="card-body">
-            <form action="" class="form-group">
-                <div class="form-group row">
-                    <label for="years" class="col-sm-2 col-form-label">Years</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control " id="years" placeholder="Years">
-                    </div>
-                  </div>
-        
-                  <div class="form-group row">
-                      <label for="institution" class="col-sm-2 col-form-label">Institution</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control " id="institution" placeholder="Institution">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="degree" class="col-sm-2 col-form-label">Degree</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="degree" placeholder="Degree">
-                        </div>
-                      </div>
-            </form>
+      </div>
+      <div class="form-group row">
+        <label for="runningParty" class="col-sm-2 col-form-label">Running party</label>
+        <div class="dropdown col-sm-10 mt-1">
+          <!-- <input type="text" class="form-control " id="runningParty" placeholder="Running party"> -->
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
         </div>
-      </div> 
-      
+      </div>
 
-      <div class="card  mt-4 mb-4">
-          <div class="card-header">
-            Achievements and Notable Mentions
-          </div>
-          <div class="card-body">
-              <form action="" class="form-group">
-                  <div class="form-group row">
-                      <label for="image" class="col-sm-2 col-form-label">Image</label>
-                      <div class="col-sm-10">
-                          <input type="file" class="form-control-file" id="image">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="title" class="col-sm-2 col-form-label">Title</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control " id="title" placeholder="Title">
-                      </div>
-                    </div>
-          
-                    <div class="form-group row">
-                        <label for="date" class="col-sm-2 col-form-label">Date</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control " id="date" placeholder="Date">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                          <label for="tags" class="col-sm-2 col-form-label">Tags</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="tags" placeholder="Tags">
-                          </div>
-                        </div>
-                
-                          <div class="form-group row">
-                              <label for="status" class="col-sm-2 col-form-label">Status</label>
-                              <div class="col-sm-10">
-                                <input type="text" class="form-control " id="status" placeholder="Status">
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="userComments" class="col-sm-2 col-form-label">User Comments</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="userCOmments" placeholder="User Comments">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                  <label for="upvote" class="col-sm-2 col-form-label">Up Vote</label>
-                                  <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="upvote" placeholder="Up Vote">
-                                  </div>
-                                </div> 
-                                <div class="form-group row">
-                                    <label for="downvote" class="col-sm-2 col-form-label">Down Vote</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" class="form-control" id="downvote" placeholder="Down Vote">
-                                    </div>
-                                  </div>    
-              </form>
-          </div>
-        </div> 
+      <div class="form-group row">
+        <label for="hometown" class="col-sm-2 col-form-label">Hometown</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="Hometown" placeholder="Hometown">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="website" class="col-sm-2 col-form-label">website(url)</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="website" placeholder="website(url)">
+        </div>
+      </div>
 
-        <div class="card  mt-4 mb-4">
-            <div class="card-header">
-              Recommendations
-            </div>
-            <div class="card-body">
-                <form action="" class="form-group">
-                      <div class="form-group row">
-                        <label for="avatar" class="col-sm-2 col-form-label">Avatar</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control " id="title" placeholder="avatar">
-                        </div>
-                      </div>
-            
-                      <div class="form-group">
-                          <!-- <label for="exampleFormControlTextarea1"> </label> -->
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <label for="nameofRecommendator" class="col-sm-2 col-form-label">Name of recommendator</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="tags" placeholder="Name of Recommendator">
-                            </div>
-                          </div>
-                  
-                            <div class="form-group row">
-                                <label for="status" class="col-sm-2 col-form-label">Profile SUbtitle</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control " id="status" placeholder="Status">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                  <label for="userComments" class="col-sm-2 col-form-label">User Comments</label>
-                                  <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="userCOmments" placeholder="User Comments">
-                                  </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="upvote" class="col-sm-2 col-form-label">Up Vote</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" class="form-control" id="upvote" placeholder="Up Vote">
-                                    </div>
-                                  </div> 
-                                  <div class="form-group row">
-                                      <label for="downvote" class="col-sm-2 col-form-label">Down Vote</label>
-                                      <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="downvote" placeholder="Down Vote">
-                                      </div>
-                                    </div>    
-                </form>
-            </div>
-          </div>
+      <div class="form-group row">
+        <label for="socialMedia" class="col-sm-2 col-form-label">Social media</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="social-Media" placeholder="Social media">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="manifesto" class="col-sm-2 col-form-label">Manifesto(url)</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="manifesto" placeholder="Manifesto(url)">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="currentOffice" class="col-sm-2 col-form-label">Political office</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="currentOffice" placeholder="Current political office">
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 
+<div class="card  mt-4">
+  <div class="card-header">
+    Biography
+  </div>
+  <div class="card-body">
+    <form action="" class="form-group">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">About Politician Name </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form>
+  </div>
+</div>
 
 
+<div class="card  mt-4">
+  <div class="card-header">
+    Education
+  </div>
+  <div class="card-body">
+    <form action="" class="form-group">
+      <div class="form-group row">
+        <label for="years" class="col-sm-2 col-form-label">Years</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="years" placeholder="Years">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="institution" class="col-sm-2 col-form-label">Institution</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="institution" placeholder="Institution">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="degree" class="col-sm-2 col-form-label">Degree</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="degree" placeholder="Degree">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="card  mt-4 mb-4">
+  <div class="card-header">
+    Achievements and Notable Mentions
+  </div>
+  <div class="card-body">
+    <form action="" class="form-group">
+      <div class="form-group row">
+        <label for="image" class="col-sm-2 col-form-label">Image</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control-file" id="image">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="title" placeholder="Title">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="date" class="col-sm-2 col-form-label">Date</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="date" placeholder="Date">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="tags" class="col-sm-2 col-form-label">Tags</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="tags" placeholder="Tags">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control " id="status" placeholder="Status">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="userComments" class="col-sm-2 col-form-label">User Comments</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="userCOmments" placeholder="User Comments">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="upvote" class="col-sm-2 col-form-label">Up Vote</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="upvote" placeholder="Up Vote">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="downvote" class="col-sm-2 col-form-label">Down Vote</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="downvote" placeholder="Down Vote">
+        </div>
+      </div>
+    </form>
+  </div>
+ </div> 
+
+        <div class="card  mt-4 mb-4">
+          <div class="card-header">
+            Recommendations
+          </div>
+          <div class="card-body">
+            <form action="" class="form-group">
+              <div class="form-group row">
+                <label for="image" class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="file" class="form-control-file" id="image">
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1"> </label> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group row">
+                <label for="nameofRecommendator" class="col-sm-2 col-form-label">Name of Recommendator</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="tags" placeholder="Name of Recommendator">
+                </div>
+              </div>
+        
+              <div class="form-group row">
+                <label for="status" class="col-sm-2 col-form-label">Profile Subtitle</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control " id="profile" placeholder="Profile Subtitle">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="card  mt-4 mb-4">
+            <div class="card-header">
+              Key Agendas
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                  <label for="agendaName" class="col-sm-2 col-form-label">Agenda Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="agendaName" placeholder="Agenda Name">
+                  </div>
+                </div>
+          
+                <div class="form-group row">
+                    <label for="upvote" class="col-sm-2 col-form-label">Up Vote</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="upvote" placeholder="Up Vote">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="downvote" class="col-sm-2 col-form-label">Down Vote</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="downvote" placeholder="Down Vote">
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="form-group">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+          </div>
+          </div>
+        </form>   
+</div>
 <% include partials/footer %>
  
