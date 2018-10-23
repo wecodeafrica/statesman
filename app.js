@@ -63,5 +63,13 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-// configure port for server to listen
-app.listen(process.env.PORT, () => console.log('server is listening on port 3000'));
+app.get('/login', ( req, res) => {
+    res.render('login')
+});
+
+app.get( '/forms', ( req, res) => {
+    res.render('forms')
+})
+
+
+app.listen(process.env.PORT, () => console.log(`server is listening`));
