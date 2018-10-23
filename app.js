@@ -70,6 +70,19 @@ app.get('/login', ( req, res) => {
 app.get( '/forms', ( req, res) => {
     res.render('forms')
 })
+app.get('/stateman', ( req, res) => {
+    res.render('stateman')
+})
 
+app.get( '/footer', ( req, res ) => {
+    res.render( 'footer' )
+});
+
+app.get( '/search', ( req,res ) => {
+    res.render('search')
+});
+app.get('/landing', ( req, res ) => {
+    res.render( 'landing')
+})
 
 app.listen(process.env.PORT, () => console.log(`server is listening`));
