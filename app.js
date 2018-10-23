@@ -34,6 +34,13 @@ app.get( '/forms', ( req, res) => {
 
 app.get( '/footer', ( req, res ) => {
     res.render( 'footer' )
+});
+
+app.get( '/search', ( req,res ) => {
+    res.render('search')
+});
+app.get('/landing', ( req, res ) => {
+    res.render( 'landing')
 })
 
 app.listen(port, () => console.log(`server is listening on ${port}`));

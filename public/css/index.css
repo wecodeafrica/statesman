@@ -158,12 +158,17 @@ a {
 
 /* footer */
 
+.states {
+  height: 20%;
+  background: #007bff;
+  color: red;
+}
 .top {
   background: white;
 }
 .footerHead {
   background :  rgb(17, 127, 57);;
-  height: 10%;
+  height:20%;
 }
 
 .footerBody {
@@ -174,3 +179,5 @@ a {
 .footerFooter {
   background: #007bff
 }
+
+/* Ben */
