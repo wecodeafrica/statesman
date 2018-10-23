@@ -156,4 +156,11 @@ a {
 
 
 
-/* forgot */
+/* footer */
+.top {
+  background: white;
+}
+.footerHead {
+  background :  rgb(17, 127, 57);;
+  height: 10%;
+}

@@ -32,5 +32,8 @@ app.get( '/forms', ( req, res) => {
     res.render('forms')
 })
 
+app.get( '/footer', ( req, res ) => {
+    res.render( 'footer' )
+})
 
 app.listen(port, () => console.log(`server is listening on ${port}`));
