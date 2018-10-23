@@ -9,7 +9,6 @@ const session = require('express-session');
 var logger = require('morgan');
 require('./config/passport');
 
-
 // requiring mongoose db
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -28,7 +27,7 @@ app.use(cookieParser());
 // set views template to ejs
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
-// configure body parser
+// configure express to revive user input
 app.use(express.json());
 app.use(express.urlencoded({
     extended: false
