@@ -26,6 +26,10 @@ app.get('/forgot', (req, res) => {
 
 app.get('/login', ( req, res) => {
     res.render('login')
+});
+
+app.get( '/forms', ( req, res) => {
+    res.render('forms')
 })
 
 
