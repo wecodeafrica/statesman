@@ -26,10 +26,24 @@ app.get('/forgot', (req, res) => {
 
 app.get('/login', ( req, res) => {
     res.render('login')
+});
+
+app.get( '/forms', ( req, res) => {
+    res.render('forms')
 })
 app.get('/stateman', ( req, res) => {
     res.render('stateman')
 })
 
+app.get( '/footer', ( req, res ) => {
+    res.render( 'footer' )
+});
+
+app.get( '/search', ( req,res ) => {
+    res.render('search')
+});
+app.get('/landing', ( req, res ) => {
+    res.render( 'landing')
+})
 
 app.listen(port, () => console.log(`server is listening on ${port}`));
