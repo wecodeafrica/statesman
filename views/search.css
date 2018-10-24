@@ -1,0 +1,79 @@
+
+
+.container {
+  margin-top: 5% ;
+  margin-bottom: 5% ;
+  background-color: rgb(254, 254, 254);
+  width: 50%;
+}
+.form-control {
+  margin-bottom: 2%
+}
+.btn {
+  background-color: green;
+  border: 1px solid green;
+}
+.btn:hover {
+  background-color: rgba(0, 128, 0, 0.816);
+  border: 1px solid green;
+}
+.form-control:hover {
+box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.412);
+}
+.title {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bolder
+}
+.forms{
+  border-top: 1px solid rgba(0, 0, 0, 0.672);
+}
+.contain {
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin: 5% 10%;
+  border: 1px solid rgba(105, 121, 105, 0.433);
+  padding: 3%;
+}
+@media (max-width:700px){
+  .contain {
+    padding: 0;
+   flex-direction: column;
+  }
+.card {
+  width: 100% !important;
+  margin: 0 auto
+}
+.imgDiv {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center
+}
+}
+
+.contain:hover {
+  border:  none;
+  box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.412);
+}
+.imgDiv {
+  width: 20%;
+  height: 200px;
+  text-align: center;
+}
+.cover {
+  height: 200px;
+  widows: 20%;
+  background-color: black;
+  z-index: 1 !important;
+  margin-top: -150px;
+}
+.img {
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+.card {
+  width: 60% !important
+}
