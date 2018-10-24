@@ -13,14 +13,14 @@ require('./config/passport');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // configure mongoose
-mongoose.connect('mongodb://localhost:27017/omalicha', {
+mongoose.connect(process.env.mongoURI, {
         useNewUrlParser: true
     })
-    .then(() => console.log('You are connected!'))
-    .catch(err => {
-        console.log('Error ' + err);
-        process.exit(1);
-    });
+    // .then(() => console.log('You are connected!'))
+    // .catch(err => {
+    //     console.log('Error ' + err);
+    //     process.exit(1);
+    // });
 
 app.use(logger('dev'));
 app.use(cookieParser());
@@ -70,6 +70,19 @@ app.get('/login', ( req, res) => {
 app.get( '/forms', ( req, res) => {
     res.render('forms')
 })
+app.get('/stateman', ( req, res) => {
+    res.render('stateman')
+})
 
+app.get( '/footer', ( req, res ) => {
+    res.render( 'footer' )
+});
+
+app.get( '/search', ( req,res ) => {
+    res.render('search')
+});
+app.get('/landing', ( req, res ) => {
+    res.render( 'landing')
+})
 
 app.listen(process.env.PORT, () => console.log(`server is listening`));
