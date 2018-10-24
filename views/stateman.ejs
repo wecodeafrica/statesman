@@ -4,49 +4,82 @@
 <!-- Website Navigation  -->
 <% include partials/menu %>
 
-
+<main class="stn__wrapper">
 <!-- Begin Statemans Page Section  -->
-<section class="mt-5 pt-5">
-    <div class="container">
+
+<section class="my-5 pt-5 section__profile-intro stn__bg-default">
+    <div class="container mt-md-5">
         <div class="row">
             <!-- Left Column for Statesmans Profile -->
             <div class="col-sm-6 text-center">
                 <img class="rounded-circle" src="/assets/politician.jpg" alt="PoliticianImage">
-                <h3>Andrew Miracle</h3>
+                <h3 class="text-uppercase text-xl-center mt-2">Andrew Miracle</h3>
                 <p class="small">Running for the office of <span>President</span> of <span>Nigeria</span>, under the <span>People's Democratic Party</span></p>
 
             <!-- Statesman Credential Statistics -->
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>230,000 <span>Vouchers</span></h4>
+                        <h4>230,000 <span class="text-black-50 small d-block">Vouchers</span></h4>
                     </div>
                     <div class="col-sm-4">
-                        <h4>7 <span>Positions Held</span></h4>
+                        <h4>7 <span class="text-black-50 small d-block">Positions Held</span></h4>
                     </div>
                     <div class="col-sm-4">
-                        <img src="/assets/party.png" alt="Political Party Emblem" width="30" height="30">
+                        <img src="/assets/party.png" alt="Political Party Emblem" width="50" height="50">
                     </div>
                 </div>
-
-
-
-
             </div>
 
-            <div class="col-sm-6">
-                <h2>KEY AGENDAS</h2>
-                <p>One U$D will be equivalent to One ₦G₦</p>
-                <p>I will wipe corruption out from the government</p>
-                <p>I will feed the people</p>
-                <p>I will provide educational scholarship</p>
+<!-- ============ KEY AGENDAS SECTION ========== BOOSTRAP PROGRESS BARS  -->
+            <div class="col-sm-6 mt-5 pt-3">
+                <div class="container ml-md-5">
+                    <h2 class="text-uppercase my-4">KEY AGENDAS</h2>
+                    <p>One U$D will be equivalent to One ₦G₦</p>
+                    <p>I will wipe corruption out from the government</p>
+                    <p>I will feed the people</p>
+                    <p>I will provide educational scholarship</p>
+                </div>
             </div>
+<!-- ============ KEY AGENDAS SECTION ========== BOOSTRAP PROGRESS BARS  -->
+        
+
         </div> <!-- End Row -->
     </div><!-- End Container DIV -->
 
     
 </section>
 
-<section>
+<section class="section__profile-bio">
+        <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <h2>Biography</h2>
     <h2>Positions Held</h2>
     <h2>Education</h2>
@@ -97,6 +130,7 @@
 
 </section>
 
+</main>
 
 <% include partials/footer %>
  
