@@ -6,7 +6,7 @@ const User = require('../models/user');
 
 // validation for user sign-up data
 const userSchema = Joi.object().keys({
-    // name: Joi.string().required(),
+    name: Joi.string().required(),
     // username: Joi.string().required(),
     email: Joi.string().email().required(),
     password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/).required(),
@@ -29,6 +29,7 @@ router.post('/register', async (req, res, next) => {
 
         if (error) {
             req.flash('error', 'Invalid data. Please try again!');
+            console.log(error)
             return res.redirect('/register');
         }
         const user = await User.findOne({
@@ -45,9 +46,8 @@ router.post('/register', async (req, res, next) => {
         delete value.password2;
         value.password = hashedPassword;
         const newUser = await new User(value);
-        // newUser = result.value;
         await newUser.save();
-        // console.log(value);
+        console.log(value);
         // req.flash('success', 'you have successfully logged in');
         res.redirect('/login');
     } catch (error) {

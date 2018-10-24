@@ -13,14 +13,14 @@ require('./config/passport');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // configure mongoose
-mongoose.connect('mongodb://localhost:27017/omalicha', {
+mongoose.connect(process.env.mongoURI, {
         useNewUrlParser: true
     })
-    .then(() => console.log('You are connected!'))
-    .catch(err => {
-        console.log('Error ' + err);
-        process.exit(1);
-    });
+    // .then(() => console.log('You are connected!'))
+    // .catch(err => {
+    //     console.log('Error ' + err);
+    //     process.exit(1);
+    // });
 
 app.use(logger('dev'));
 app.use(cookieParser());
