@@ -1,90 +1,40 @@
 <% include partials/header %>
 
 <div class="container-fluid">
-  
   <div class="row">
 
     <div class="col-9">
 
-      <form class="form-signin">
+      <form class="form-signin" action="/register" Method="POST">
         <div class="top">
-          <p class="statesman">mystatesman</p>
-          <p class=" sign " >sign up  with</p>
+          <span id="statesman">mystatesman</span>
         </div>
-        
         <div class=" social mb-4">
           <button class="btn btn-sm btn-primary " >Google</button>
           <button class="btn btn-sm btn-primary" >facebook</button>
           
         </div>
         <p class="orWith" id="sign">or with</p>
-        <input type="fullName" id="fullNmae" class="form-control" placeholder="Full Name" required autofocus>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <input type="password" id="inputComfirmPassword" class="form-control" placeholder="Comfirm Password" required>
-        <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-          </button>
+        <input type="fullName" id="fullNmae" name="name" class="form-control" placeholder="Full Name" required autofocus>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required autofocus>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputComfirmPassword" name="password2" class="form-control" placeholder="Comfirm Password" required>
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> Remember me
+            <input id="remember-me" type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <div class="forgot">
-            <a href="#">I have an account already </a>
-            <!-- <a href="#">Forgot your email?</a> -->
-          </div>
+       
         <button class="btn btn-sm btn-primary btn-block" type="submit">Sign up</button>
 
-        <div class="i">
-          <a href="#"></a>
-           <!-- <a href="#">Create account</a> -->
-        </div>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p> -->
       </form>
     </div>
-    
-    <div class="d-flex col-3">
-      <div class="secondDiv" >
-       <div class="one statesmanText">
-          <h4>statesman</h4>
-          <p>
-            We believe democracy is government of the people, for the people and by the people. <br>
-            In a democratic government, information should be Transparent, True and Inclusive.
-          </p>
-   
-      </div>
-      
-        <div class="one imageDiv " >
-            <img src="/assets/userImage.png"  alt="images">
-         <p>I've known Uche from my years as a student in ABSU. He sponsored the tuition scholarship for my roommate Nicholas back then, and has been a major support for young entrepreneurs in Okigwe </p>
-        </div>
-        <div class="one politicalParties">
-          <h4>56</h4>
-          <p>Political Parties</p>
-        </div>
 
-        <div class="one politicalParties">
-            <h4>245</h4>
-            <p>Political Candidates</p>
-        </div>
-
-        <div class="one politicalParties">
-            <h4>209</h4>
-            <p>Manifestos</p>
-        </div>
-
-        <div class="one politicalParties">
-            <h4>70,539</h4>
-            <p>Uncompleted Projects</p>
-        </div>
-       </div>
+    <div class="col-3">
+      hello 1
     </div>
-  </div>
-  
-  <div class="footer">
-    <p>Copyright Team Omalicha courtesy of NaijaHacks <span>|  Terms of use</span></p>
   </div>
 </div>
 
 <% include partials/footer %>
- 

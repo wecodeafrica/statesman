@@ -34,16 +34,10 @@
   font-weight: bold
 }
 
-.politicalParties {
-  line-height: 2px
+#remember-me {
+  vertical-align: middle;
 }
-.politicalParties h4 {
-  font-weight: bold
-}
-.imageDiv img {
-  width: 50px;
-  height: 50px;
-}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
