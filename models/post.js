@@ -9,7 +9,7 @@ const userSchema = new Schema({
         bio: {
             type: String,
         },
-        name {
+        name: {
             type: String,
             index: true,
             unique: true
