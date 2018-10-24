@@ -6,12 +6,86 @@
 /* End Normalize and Reset from Bootstrap Reboot */
 
 
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow', sans-serif;
+/* =============== BEGIN CSS FOR GLOBAL VARIABLES  ========================= */
+body {
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 .0625rem transparent;
+  letter-spacing: .0625rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Barlow', Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000;
 }
+
+/* =============== END CSS FOR GLOBAL VARIABLES  ========================= */
+.stn__bg-light {
+  background: #d2e9ea;
+}
+
+.stn__bg-primary {
+  background: #0c845b;
+}
+
+.stn__bg-secondary {
+  background: #2b9684;
+}
+
+.stn__bg-active {
+  background: #0fb4bb;
+}
+
+
+/* ==================== NAVIGATION BAR ================================= */
+.stn__navbar {
+  height: 80px;
+  background: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* === Selector for Navigation borders border right | padding ==== */
+.stn__navbar .active .stn__navbar-anchor {
+  border-left: 1px solid #dddddd;
+}
+
+.stn__navbar .stn__navbar-anchor{
+  line-height: 3.9em;
+  border-right: 1px solid #dddddd;
+}
+
+.stn__navbar .navbar-nav .stn__navbar-anchor {
+  padding: 9px 20px;
+}
+/* ==== End Navigation borders left and right ==== */
+
+
+
+/* ======= Hover for navigation bar  ============ */
+.stn__navbar .stn__navbar-anchor:hover {
+  color: #0c845b;
+  border-bottom: 2px solid #0c845b;
+  font-weight: 500;
+  position: relative;
+}
+
+
+/* ====== Right hand side of navigation bar  ============= */
+.stn__navbar .stn__navbar-right {
+  padding: 20px 50px;
+  margin-right: -20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  color: #fff;
+}
+
+
+
+/* ==================== NAVIGATION BAR ================================= */
+
+
+
+
+
+
 
 /* register */
 .container-fluid {
