@@ -33,7 +33,7 @@ body {
 }
 
 .stn__bg-active {
-  background: #0fb4bb;
+  background: #001e32;
 }
 
 .stn__wrapper{
@@ -61,6 +61,9 @@ body {
 .stn__navbar .stn__navbar-anchor{
   line-height: 3.9em;
   border-right: 1px solid #dddddd;
+  font-size: 1em;
+  color: #000 !important; /* Not a very good practice but used to override @dexious FOOTER CONTEXT fix later */
+
 }
 
 .stn__navbar .navbar-nav .stn__navbar-anchor {
