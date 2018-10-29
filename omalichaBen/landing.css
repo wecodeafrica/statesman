@@ -1,0 +1,152 @@
+
+
+.container1{ 
+  display: flex;
+  margin: 10% 6%
+}
+.form {
+  width: 50%;
+}
+.btn {
+  background-color: green !important;
+  border: 1px solid green
+}
+.btn:hover {
+  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.692) !important
+}
+.title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center  
+}
+.form-control {
+  margin-bottom: 5%
+}
+.states {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.state > li {
+  list-style: none;
+}
+.state >li  a {
+  color: black
+}
+
+
+
+
+/* Search */
+.searchPara {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px
+}
+.contain{
+  display: flex;
+  border-radius: 5px
+}
+.contain:hover{
+box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.412);
+}
+.search{
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 3%
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6%;
+  box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.199);\
+}
+img {
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* Parties */
+.partiesText{
+  text-align: center;
+  font-size: 30px
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 6%
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+  border-radius: 25px
+}
+.boxes {
+  width: 16%
+}
+.boxes:hover {
+ box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.412);
+ border: 1px solid rgba(0, 128, 0, 0.459)
+}
+.card  {
+  width: 100%;
+}
+.box .card-title {
+  font-size: 15px;
+  margin-bottom: 
+}
+.box .card-text {
+  font-size: 10px
+}
+.box .card-link {
+  font-size: 10px;
+}
+.box .card-body {
+  margin-top: -20px !important;
+  margin-bottom: -20px !important
+}
+
+
+
+
+
+/* States */
+.container4 {
+ display: flex;
+ flex-direction: column;
+ margin: 10% 6%;
+ padding: 2%;
+  box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.193);
+ border: 1px solid #15770113
+}
+.statePara {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px
+}
+.topState {
+  display: flex;
+  justify-content: space-between;
+}
+.topState .card-body {
+  border: 1px solid rgba(2, 78, 6, 0.46);
+  margin: 1%
+}
+.topState .card-body:hover {
+  box-shadow: 0 0 6px 1px rgba(9, 78, 5, 0.412);
+}
+.topState .card-body  a{
+  text-decoration: none;
+  color: rgb(1, 36, 1)
+}
+
