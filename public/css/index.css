@@ -12,11 +12,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
-  height: 90vh;
+  height: 100vh;
 }
 
 .col-3 {
-  height: 90vh;
+  height: 100vh;
   background-color: rgb(206, 210, 209)
 }
 
@@ -148,30 +148,53 @@ a {
 /* login */
 
 
+ .navbar-nav li a{
+  color: white !important;
+  }
 
 
+  .page-footer {
+    background: #001e32;
+  }
+  
+  #footer-content {
+    color: #ffffff;
+  }
+  
+  
+  
+  .company {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 10px
+  }
+  i {
+    color: #ffffff;
+    font-size: 13px;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }
+  a {
+    font-size: 10px
+  }
+  .text-lowercase {
+    color: #5a9dc9;
+  }
+  
+  .footer-copyright {
+    color: #ffffff;
+  }
+  p{
+    font-size: 10px
+  }
+  .mb-0 {
+    color: #1a719c;
+  }
+  
+  
 /* footer */
 
-.states {
-  height: 20%;
-  background: #007bff;
-  color: red;
-}
-.top {
-  background: white;
-}
-.footerHead {
-  background :  rgb(17, 127, 57);;
-  height:20%;
-}
-
-.footerBody {
-  background: #007bff;
-  height: 70vh;
-}
-
-.footerFooter {
-  background: #007bff
-}
 
 /* Ben */
