@@ -3,13 +3,14 @@
   margin: 0
 }
 
+/* Registration / login / Forgot Password */
 .cover {
   background: rgb(225, 225, 222);
   width: 100%;
   margin: auto;
 }
 .firstLine {
-  height: 0.2px;
+  height: 0.3px;
   background: rgb(221, 221, 221);
 }
 .stats h5 {
@@ -18,11 +19,6 @@
 .stats p {
   font-style: italic
 }
-
-
-
-
-
 
 
 /* form */
@@ -65,14 +61,10 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+/* form */
 
 
-
-
-
-
-
-
+/* Registration / login / Forgot Password */
 
 
 /* footer */
@@ -117,4 +109,4 @@ a {
   #footer-content {
     color: #ffffff;
   }
-  
+  /* footer */

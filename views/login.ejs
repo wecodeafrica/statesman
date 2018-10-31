@@ -1,85 +1,108 @@
-<% include partials/header %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Statesman | Know your politicians</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="/css/signup.css">
 
-<div class="container-fluid">
-  
-  <div class="row">
+</head>
+<body>
+  <div class="container-fluid row p-0 cover" >
+    <!-- form -->
+      <div class="col-9 m-0 form-cover">
+        <form class="form-signin">
+          <h1 class="h3 mb-3 text-center font-weight-bold " style="color: rgb(7, 88, 40)">mystatesman</h1>
 
-    <div class="col-9">
+          <div class="mt-2 mb-3">
+            <div class="row  mt-2 mb-2 text-center">
+              <div class="col-4 mt-2 p-0  firstLine"></div> 
+              <div class="col-4" style="font-size: 0.7rem">sign IN with</div> 
+              <div class="col-4 mt-2 firstLine"></div>
+            </div>
 
-      <form class="form-signin">
-        <div class="top">
-          <p class="statesman">mystatesman</p>
-          <p class=" sign " >Sign in with</p>
-        </div>
+                <div class="d-flex .flex-row pr-2 justify-content-md-between">
+                  <button type="button" class=" btn btn-primary btn-sm">  <a class="gplus-ic">
+                    <i class="fa fa-google-plus white-text mr-4"> </i>
+                  </a>Google</button>
+                  <button type="button" class=" btn btn-primary btn-sm"> <a class="fb-ic">
+                    <i class="fa fa-facebook white-text mr-4"> </i>
+                  </a>facebook</button>
+                </div>
+                <div class="row  mt-2 mb-2 text-center">
+                    <div class="col-4 mt-2 p-0 text-muted firstLine"></div> 
+                    <div class="col-4" style="font-size: 0.7rem">or Email</div> 
+                    <div class="col-4 mt-2 firstLine"></div>
+                  </div>    
+          </div>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         
-        <div class=" social mb-4">
-          <button class="btn btn-sm btn-primary " >Google</button>
-          <button class="btn btn-sm btn-primary" >facebook</button>
-        </div>
-        <p class="orWith" id="sign">or with</p>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <div class="forgot">
-            <a href="#">Forgot your password?</a>
-            <a href="#">Forgot your email?</a>
-        </div>
-        
-        <button class="btn btn-sm btn-primary btn-block" type="submit">Sign in</button>
-
-        <div class="i">
-          <a href="#">New here?  </a> </br>
-          <a href="#">Create account</a>
-        </div>
-      </form>
-    </div>
-    
-    <div class="d-flex col-3">
-      <div class="secondDiv" >
-       <div class="one statesmanText">
-          <h4>statesman</h4>
-          <p>
-            We believe democracy is government of the people, for the people and by the people. <br>
-            In a democratic government, information should be Transparent, True and Inclusive.
-          </p>
-   
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          
+          <a class="nav-link mt-0 " href="#">Forgot your password?</a>
+          <button class="btn btn-lg btn-primary btn-block w-50 mx-auto" type="submit">Sign in</button>
+          <div class="text-center">
+            <a class="nav-link mb-3" href="#">New here? Create an account</a>
+          </div>
+        </form>
       </div>
+    <!-- form -->
+
+    <!-- Right div -->
+      <div class="col-3 w-100" style="color: rgb(31, 31, 47)">
+        <div class="mt-2">
+          <div class="mt-2 card" style="width: 18rem; background: rgb(225, 225, 222); border: 0px solid">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold">STATESMAN</h5>
+              <p class="card-text" style="font-size: 0.8rem">We believe democracy is government of the people, for the people and by the people.
+                <br> In a democratic government, information should be Transparent, True and Inclusive.</p>
+            </div>
+          </div>
       
-        <div class="one imageDiv " >
-            <img src="/assets/userImage.png"  alt="images">
-         <p>I've known Uche from my years as a student in ABSU. He sponsored the tuition scholarship for my roommate Nicholas back then, and has been a major support for young entrepreneurs in Okigwe </p>
-        </div>
-        <div class="one politicalParties">
-          <h4>56</h4>
-          <p>Political Parties</p>
-        </div>
+          <div class="mt-1 card" style="width: 18rem; background: rgb(225, 225, 222); border: 0px solid">
+              <img src="/assets/userImage.png" class="block mb-0 ml-3 rounded float-left " style="width: 5rem; height: 5rem" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 0.8rem; font-style: italic">I've known Uche from my years as a student in ABSU. He sponsored the tuition scholarship for my roommate Nicholas
+                back then, and has been a major support for young entrepreneurs in Okigwe. </p>
+            </div>
+          </div>
+      <div class="stats ml-3" style="line-height: 0.5rem ">
 
-        <div class="one politicalParties">
-            <h4>245</h4>
-            <p>Political Candidates</p>
-        </div>
-
-        <div class="one politicalParties">
-            <h4>209</h4>
-            <p>Manifestos</p>
-        </div>
-
-        <div class="one politicalParties">
-            <h4>70,539</h4>
-            <p>Uncompleted Projects</p>
-        </div>
-       </div>
-    </div>
-  </div>
+        <div class="" >
+            <h5>56</h5>
+            <p>Political Parties</p>
+          </div>
   
-  <div class="footer">
-    <p>Copyright Team Omalicha courtesy of NaijaHacks <span>|  Terms of use</span></p>
+          <div class="">
+              <h5>245</h5>
+              <p>Political Candidates</p>
+          </div>
+  
+          <div class="">
+              <h5>209</h5>
+              <p>Manifestos</p>
+          </div>
+  
+          <div class="">
+              <h5>70,539</h5>
+              <p>Uncompleted Projects</p>
+          </div>
+      </div>
+        </div>
+      </div>
   </div>
-</div>
+  <!-- </body>
+  </html> -->
+  <% include partials/footer %>
 
-<% include partials/footer %>
- 
+
+
