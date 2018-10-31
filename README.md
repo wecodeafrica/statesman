@@ -1,14 +1,5 @@
-# NaijaHacks Hackathon 2018
-
-## TeamOmalicha 🔥🔥🔥
-
-### Team Members
-
-- Andrew - [@koolamusic](https://twitter.com/koolamusic) 
-- Chidera - [@dexious](https://twitter.com/talk2dera) 
-- Emmanuel - [@peoray](https://twitter.com/super_raay) 
-
-### Section
+**important notice OCT 31** 
+please run `git remote set-url origin git@github.com:koolamusic/statesman.git` to update local remote origin as this projects upstream URL has changed.
 
 ### Problem 🔥🔥🔥
 Political Manifestos are mostly untrue, most politicians provide the mass 
@@ -23,8 +14,19 @@ statesman in their locality,
 been completed
 - Verify and track the promises of these political manifestos
 
+## TeamOmalicha 🔥🔥🔥
+
+### Team Members
+
+- Andrew - [@koolamusic](https://twitter.com/koolamusic) 
+- Chidera - [@dexious](https://twitter.com/talk2dera) 
+- Emmanuel - [@peoray](https://twitter.com/super_raay) 
+
 ### :heavy_plus_sign: Proposed Stack
 
 - :bulb: _FrontEnd_: HTML, CSS | Bootstrap | Sass
 - :bulb: _Backend_: NodeJs & Express
 - :bulb: _Database_: Mongoose
+
+### Credits
+- [NaijaHacks Hackathon 2018](https://naijahacks.com/)
