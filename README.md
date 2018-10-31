@@ -5,7 +5,7 @@
 ### Team Members
 
 - Andrew - [@koolamusic](https://twitter.com/koolamusic) 
-- Chidera - [@dexious](https://twitter.com/) 
+- Chidera - [@dexious](https://twitter.com/talk2dera) 
 - Emmanuel - [@peoray](https://twitter.com/super_raay) 
 
 ### Section
