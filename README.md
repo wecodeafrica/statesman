@@ -27,4 +27,4 @@ been completed
 
 - :bulb: _FrontEnd_: HTML, CSS | Bootstrap | Sass
 - :bulb: _Backend_: NodeJs & Express
-- :bulb: _Database_: MongoDb
+- :bulb: _Database_: Mongoose
