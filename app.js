@@ -83,6 +83,9 @@ app.get( '/search', ( req,res ) => {
 });
 app.get('/landing', ( req, res ) => {
     res.render( 'landing')
+});
+app.get('/forgotPassword', ( req, res ) => {
+    res.render( 'forgotPassword' )
 })
 
 app.listen(process.env.PORT, () => console.log(`server is listening`));

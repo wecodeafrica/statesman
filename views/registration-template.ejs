@@ -1,5 +1,15 @@
-<% include partials/header %>
-<% include partials/menu %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Statesman | Know your politicians</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="/css/signup.css">
+
+</head>
+<body>
   <div class="container-fluid row p-0 cover" >
     <!-- form -->
       <div class="col-9 m-0 form-cover">
@@ -9,16 +19,15 @@
           <div class="mt-2 mb-3">
             <div class="row  mt-2 mb-2 text-center">
               <div class="col-4 mt-2 p-0  firstLine"></div> 
-              <div class="col-4" style="font-size: 0.7rem">sign UP with</div> 
+              <div class="col-4" style="font-size: 0.7rem">sign in with</div> 
               <div class="col-4 mt-2 firstLine"></div>
             </div>
-                      <!-- google -->
+
                 <div class="d-flex .flex-row pr-2 justify-content-md-between">
-                  <button style="background: #1a719c !important"  type="button" class=" btn btn-primary btn-sm">  <a class="gplus-ic">
-                    <i class="fa fa-google-plus white-text mr-4" > </i>
+                  <button type="button" class=" btn btn-primary btn-sm"  <a class="gplus-ic">
+                    <i class="fa fa-google-plus white-text mr-4"> </i>
                   </a>Google</button>
-                      <!-- facebook -->
-                  <button style="background: #1a719c !important"  type="button" class=" btn btn-primary btn-sm"> <a class="fb-ic">
+                  <button type="button" class=" btn btn-secondary btn-sm"> <a class="fb-ic">
                     <i class="fa fa-facebook white-text mr-4"> </i>
                   </a>facebook</button>
                 </div>
@@ -35,11 +44,21 @@
           <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address" required autofocus>
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <label for="comfirmPassword" class="sr-only">Comfirm Password</label>
+          <label for="comfirmPassword" class="sr-only">Password</label>
           <input type="comfirmPassword" id="comfirmPassword" class="form-control mb-2" placeholder=" Comfirm Password" required>
           
-          <button style="background: #1a719c !important" class="btn btn-lg btn-primary btn-block w-50 mx-auto "  type="submit">Sign up</button>
-  
+          
+          <div class="checkbox mb-1">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          
+          <a class="nav-link mt-0 " href="#">Forgot your password?</a>
+          <button class="btn btn-lg btn-primary btn-block w-50 mx-auto" type="submit">Sign in</button>
+          <div class="text-center">
+            <a class="nav-link mb-3" href="#">New here? Create an account</a>
+          </div>
         </form>
       </div>
     <!-- form -->
