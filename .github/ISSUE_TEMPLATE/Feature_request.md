@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680Feature request"
-about: Suggest an idea for React-Proto
+about: Suggest an idea for Statesman
 ---
 
 ### Description

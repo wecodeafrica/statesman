@@ -3,9 +3,9 @@ name: "\U0001F41BBug report"
 about: Something isn't working right
 ---
 
-### React-Prot Version: x.x.x
+### Statesman Version: x.x.x
 
-<!--- Provide the exact version of React-Proto in which you see the bug.  -->
+<!--- Provide the exact version of Statesman in which you see the bug.  -->
 
 ### Details
 

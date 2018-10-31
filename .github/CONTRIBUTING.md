@@ -1,6 +1,7 @@
-# React-Proto Contributing Guide 1.0
+# STATESMAN Contributing Guide 1.0
 
-> First off, thank you for considering making a contribution to [React Proto](https://github.com/React-Proto/react-proto). 
+> First off, thank you for considering making a contribution to [Statesman 
+Project](https://github.com/koolamusic/statesman). 
 It's people like you that inspire our commitment to open-source.
 
 The goal of this document is to create a contribution process that:

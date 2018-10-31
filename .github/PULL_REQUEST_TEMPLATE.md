@@ -29,6 +29,5 @@
 
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
-- [ ] I have read the **CONTRIBUTING** document and have signed (or will sign) the CLA.
 - [ ] I have updated/added documentation affected by my changes.
 - [ ] I have added tests to cover my changes.
