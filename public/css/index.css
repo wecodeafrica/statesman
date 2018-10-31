@@ -36,9 +36,13 @@ body {
   background: #001e32;
 }
 
-.stn__wrapper{
-  background: #f8f8f8;
+.stn__wrapper {
+  background: #f5f5f5;
   padding-top: 1em;
+}
+
+.stn__shadow-light {
+  box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* =============== END CSS FOR GLOBAL VARIABLES  ========================= */
@@ -98,7 +102,6 @@ body {
 /* ==================== STATEMAN WEBPAGE CUSTOM CSS ================================= */
 .section__profile-intro{
   border-bottom: 1px solid #ddd;
-  box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.1);
   padding-bottom: 3em;
   transition: ease-in 2s;
 

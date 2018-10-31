@@ -7,7 +7,7 @@
 <main class="stn__wrapper">
 <!-- Begin Statemans Page Section  -->
 
-<section class="my-5 pt-5 section__profile-intro stn__bg-default">
+<section class="my-5 pt-5 section__profile-intro stn__bg-default stn__shadow-light">
     <div class="container mt-md-5">
         <div class="row">
             <!-- Left Column for Statesmans Profile -->
@@ -51,7 +51,7 @@
 
 <section class="section__profile-bio container">
 
-    <div class="section__profile-bio-tab border">
+    <div class="section__profile-bio-tab border stn__shadow-light">
             <nav class="stn__bg-default">
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-bio-tab" data-toggle="tab" href="#nav-bio" role="tab" aria-controls="nav-bio" aria-selected="true">Biography</a>
@@ -110,52 +110,272 @@
                 </div>
                 <!-- ========  Education Tab Content Section ========= -->
             </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+            </div>    
 </section>
+
 
 <div class="text-center my-5">Is there any information we're missing out <a href="#">Suggest a section we should add</a></div>
 
 
-<section>
-    <h3>Achievements and Notable Mentions</h3>
-        <p>Completed projects while in political office, voluntary and philantrophic projects to local communities and other organizations</p>
-    
-        <div>
-            <img src="/public/assets/project.jpg" alt="Project in office">
-            <h4>Construction of Ajegunle Roundabout</h4>
-            <abbr title="10th of December 2015">December 10, 2015</abbr>
 
-            <button>Upvote</button>
-            <button>Downvote</button>
-            <button>Comment</button>
-        </div>
-
-</section>
-
-
-<section>
-    <div>
-        <h3>Recommendations</h3>
-        <p>When I was a corper and deployed to work in Nassawara State, I served under the office of the Local Government and Mr Amadi was the then Minister of Works, he was very detailed and observant and has a spirit that carried everyone on the team along on every project we embarked on, he has a great heart and one time donated his blood during an emrgency to one of the staffs who had a terrible accident while on duty </p>
-        <h5>Andrew Miracle</h5>
-        <p>Minister of Enjoyment</p>
+<section class="container section__profile-achievements stn__bg-default stn__shadow-light p-5 mb-5">
+    <div class="section__heading">
+        <h3>Achievements and Notable Mentions</h3>
+            <p>Completed projects while in political office, voluntary and philantrophic projects to local communities and other organizations</p>
     </div>
 
-</section>
+
+        <div class="row"><!-- ==== Create BS Rows to Deck Cards ===== -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/80.png" alt="Card image cap" width="80px" height="120px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>Upvote</button>
+                        <button>Downvote</button>
+                        <button>Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/80.png" alt="Card image cap" width="80px" height="120px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>Upvote</button>
+                        <button>Downvote</button>
+                        <button>Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/80.png" alt="Card image cap" width="80px" height="120px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>Upvote</button>
+                        <button>Downvote</button>
+                        <button>Comment</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div><!-- ========= END BT ROWS ======== -->           
+    </section>
+    
+    
+    <section class="container stn__bg-default stn__shadow-light mt-5 p-5">
+        <div class="section__heading">
+            <h3>Recommendations</h3>
+        </div>
+    
+        <div class="container text-center my-3" style="margin-bottom: 200px">
+            <div class="row mx-auto my-auto">
+                <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+    
+                        <!-- ============ START CAROUSEL SECTION ========== -->
+                        <div class="carousel-item py-5 active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                            Andrew Miracle
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Secondary card title</h5>
+                                            <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                State, I served under the office of the Local Government and Mr Amadi was
+                                                the then Minister of Works, he was very detailed </p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                            Andrew Miracle
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Secondary card title</h5>
+                                            <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                State, I served under the office of the Local Government and Mr Amadi was
+                                                the then Minister of Works, he was very detailed </p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">
+                                            <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                            Andrew Miracle
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Secondary card title</h5>
+                                            <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                State, I served under the office of the Local Government and Mr Amadi was
+                                                the then Minister of Works, he was very detailed </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- ============ END CAROUSEL ITEM ========== -->
+                            
+                            
+                            <!-- ============ START CAROUSEL SECTION ========== -->
+                            <div class="carousel-item py-5">
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                                    <div class="card-header">
+                                                        <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                        Andrew Miracle
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Secondary card title</h5>
+                                                        <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                            State, I served under the office of the Local Government and Mr Amadi was
+                                                            the then Minister of Works, he was very detailed </p>
+                                                    </div>
+                                                </div>
+                                            </div>  <div class="col-sm-4">
+                                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                                        <div class="card-header">
+                                                            <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                            Andrew Miracle
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Secondary card title</h5>
+                                                            <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                                State, I served under the office of the Local Government and Mr Amadi was
+                                                                the then Minister of Works, he was very detailed </p>
+                                                        </div>
+                                                    </div>
+                                                </div>  <div class="col-sm-4">
+                                                        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                                            <div class="card-header">
+                                                                <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                                Andrew Miracle
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Secondary card title</h5>
+                                                                <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                                    State, I served under the office of the Local Government and Mr Amadi was
+                                                                    the then Minister of Works, he was very detailed </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============ END CAROUSEL ITEM ========== -->
+                            
+                            
+                            <!-- ============ START CAROUSEL SECTION ========== -->
+                            <div class="carousel-item py-5">
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                                    <div class="card-header">
+                                                        <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                        Andrew Miracle
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Secondary card title</h5>
+                                                        <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                            State, I served under the office of the Local Government and Mr Amadi was
+                                                            the then Minister of Works, he was very detailed </p>
+                                                    </div>
+                                                </div>
+                                            </div>  <div class="col-sm-4">
+                                                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                                        <div class="card-header">
+                                                            <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                            Andrew Miracle
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Secondary card title</h5>
+                                                            <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                                State, I served under the office of the Local Government and Mr Amadi was
+                                                                the then Minister of Works, he was very detailed </p>
+                                                        </div>
+                                                    </div>
+                                                </div>  <div class="col-sm-4">
+                                                        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                                            <div class="card-header">
+                                                                <img class="mr-1" src="/assets/userImage.png" width="30" height="30" alt="User Avatar">
+                                                                Andrew Miracle
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Secondary card title</h5>
+                                                                <p class="card-text">When I was a corper and deployed to work in Nassawara
+                                                                    State, I served under the office of the Local Government and Mr Amadi was
+                                                                    the then Minister of Works, he was very detailed </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                            </div>
+                        </div>
+                        <!-- ============ END CAROUSEL ITEM ========== -->
+                        
+                        
+                        <!-- ============ START CAROUSEL SECTION ========== -->
+                        <div class="carousel-item py-5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <p class="card-text">Some make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Button</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card</h4>
+                                            <p class="card-text">Some make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Button</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============ END CAROUSEL ITEM ========== -->
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- ===== END TESTIMONIALS SECTION ========= -->
 
 </main>
 
