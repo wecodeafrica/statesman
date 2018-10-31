@@ -2,22 +2,22 @@
   padding: 0;
   margin: 0
 }
-body {
-  background: green
-}
 
 .cover {
-  background: yellow;
+  background: rgb(225, 225, 222);
   width: 100%;
   margin: auto;
 }
 .firstLine {
-  height: 0.8px;
-  background: black;
-  /* margin: 0 auto */
+  height: 0.2px;
+  background: rgb(221, 221, 221);
 }
-
-
+.stats h5 {
+  font-weight: bold
+}
+.stats p {
+  font-style: italic
+}
 
 
 
@@ -99,7 +99,7 @@ a {
 .footer-copyright {
   color: #ffffff;
 }
-p{
+.page-footer p{
   font-size: 10px
 }
 .mb-0 {
