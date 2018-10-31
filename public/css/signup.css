@@ -11,7 +11,11 @@ body {
   width: 100%;
   margin: auto;
 }
-
+.firstLine {
+  height: 0.8px;
+  background: black;
+  /* margin: 0 auto */
+}
 
 
 
