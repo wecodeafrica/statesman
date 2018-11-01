@@ -431,7 +431,10 @@ THE SECTION ABOVE IS EXTREMELY CRITICAL AND CLASS NAMES AND SELECTORS NEED TO BE
 }
 .company {
   font-size: 0.8rem !important;
+  line-height: 1.1em;
+  letter-spacing: 4px;
 }
+
 i {
   color: #ffffff;
   font-size: 13px;
@@ -440,9 +443,7 @@ i {
 i:hover {
   cursor: pointer;
 }
-a {
-  font-size: 14px
-}
+
 .text-lowercase {
   color: #5a9dc9;
 }
@@ -451,8 +452,17 @@ a {
   color: #ffffff;
 }
 .page-footer p{
-  font-size: 10px
+  font-size: 10px;
 }
+
+.page-footer div {
+  line-height: 0.5em;
+}
+
+.page-footer a {
+  font-size: 12px;
+}
+
 .mb-0 {
   color: #1a719c;
 }
