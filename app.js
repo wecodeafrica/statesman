@@ -60,6 +60,10 @@ app.use(require('./routes/auth'));
 // app.use(require('./routes/misc'));
 
 app.get('/', (req, res) => {
+    res.render('index');
+});
+
+app.get('/home', (req, res) => {
     res.render('home');
 });
 
@@ -73,10 +77,6 @@ app.get( '/forms', ( req, res) => {
 app.get('/stateman', ( req, res) => {
     res.render('stateman')
 })
-
-app.get( '/footer', ( req, res ) => {
-    res.render( 'footer' )
-});
 
 app.get( '/search', ( req,res ) => {
     res.render('search')

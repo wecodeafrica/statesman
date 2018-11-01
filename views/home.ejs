@@ -1,3 +1,73 @@
-you made it
+<% include partials/header %>
 
-<%= currentUser.email%>
+<!-- REQUIRE MENU PARTIALS -->
+<% include partials/menu %>
+
+
+<main class="mt-5">
+
+  <div class="alert alert-success">
+    You made it <%= currentUser.email%>
+  </div>  
+  
+    <div class="main">
+      <div class="container1">
+        <div class="form pt-5">
+          <p class="title">Search for your Statesman</p>
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+          <button type="submit" class="btn btn-primary form-control">Submit</button>
+        </div>
+        <div class="states">
+          <div class="state">
+            <li><a href=""> ABIA </a></li>
+            <li><a href=""> ADAMAWA </a></li>
+            <li><a href=""> AKWA IBOM </a></li>
+            <li><a href=""> ANAMBRA </a></li>
+            <li><a href=""> BAUCHI</a></li>
+            <li><a href=""> BAYELSA </a></li>
+            <li><a href=""> BENUE </a></li>
+            <li><a href=""> BORNU </a></li>
+            <li><a href=""> CROSS RIVER </a></li>
+            <li><a href=""> DELTA </a></li>
+            <li><a href=""> EBONYI </a></li>
+            <li><a href=""> EDO </a></li>
+          </div>
+          <div class="state">
+              <li><a href=""> EKITI </a></li>
+              <li><a href=""> ENUGU </a></li>
+              <li><a href=""> FCT ABUJA </a></li>
+              <li><a href=""> GOMBE </a></li>
+              <li><a href=""> IMO</a></li>
+              <li><a href=""> JIGAWA </a></li>
+              <li><a href=""> KADUNA </a></li>
+              <li><a href=""> KANO </a></li>
+              <li><a href=""> KATSINA </a></li>
+              <li><a href=""> KEBBI </a></li>
+              <li><a href=""> KOGI</a></li>
+              <li><a href=""> KWARA </a></li>
+            </div>
+            <div class="state">
+              <li><a href=""> LAGOS </a></li>
+              <li><a href=""> NASARAWA </a></li>
+              <li><a href=""> NIGER </a></li>
+              <li><a href=""> OGUN</a></li>
+              <li><a href=""> ONDO </a></li>
+              <li><a href=""> OSUN </a></li>
+              <li><a href=""> OYO </a></li>
+              <li><a href=""> PLATEAU </a></li>
+              <li><a href=""> RIVERS </a></li>
+              <li><a href=""> SOKOTO</a></li>
+              <li><a href=""> TARABA </a></li>
+              <li><a href=""> YOBE </a></li>
+              <li><a href=""> ZAMFARA</a></li>
+            </div>
+        </div>
+      </div>
+ 
+
+
+
+
+
+<% include partials/footer %>
+ 
