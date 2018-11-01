@@ -81,9 +81,11 @@ app.get('/stateman', ( req, res) => {
 app.get( '/search', ( req,res ) => {
     res.render('search')
 });
+
 app.get('/landing', ( req, res ) => {
     res.render( 'landing')
 });
+
 app.get('/forgotPassword', ( req, res ) => {
     res.render( 'forgotPassword' )
 })
