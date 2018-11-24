@@ -1,3 +1,7 @@
+[![Total 
+alerts](https://img.shields.io/lgtm/alerts/g/koolamusic/statesman.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/koolamusic/statesman/alerts/)
+
+
 **important notice OCT 31** 
 please run `git remote set-url origin git@github.com:koolamusic/statesman.git` to update local remote origin as this projects upstream URL has changed.
 
