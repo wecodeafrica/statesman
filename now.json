@@ -1,9 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "app.js",
-      "use": "@now/node" 
-    }],
+  "version": 1,
 
     "env": {
     "PORT": "3000",
