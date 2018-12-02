@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js",
+      "use": "@now/node" 
+    }],
+
+    "env": {
+    "PORT": "3000",
+    "mongoURI": "mongodb://omalicha_db:omalicha12345@ds133231.mlab.com:33231/omalicha"
+  }
+
+}
