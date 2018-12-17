@@ -41,6 +41,11 @@ body {
   padding-top: 1em;
 }
 
+.stn__wrapper-register {
+  background: #4d2525;
+  padding-top: 5em;
+}
+
 .stn__shadow-light {
   box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.1);
 }
