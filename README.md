@@ -18,13 +18,7 @@ statesman in their locality,
 been completed
 - Verify and track the promises of these political manifestos
 
-## TeamOmalicha 🔥🔥🔥
-
-### Team Members
-
-- Andrew - [@koolamusic](https://twitter.com/koolamusic) 
-- Chidera - [@dexious](https://twitter.com/talk2dera) 
-- Emmanuel - [@peoray](https://twitter.com/super_raay) 
+## Team O- Malich -A🔥🔥🔥
 
 ### :heavy_plus_sign: Proposed Stack
 
@@ -33,4 +27,7 @@ been completed
 - :bulb: _Database_: Mongoose
 
 ### Credits
-- [NaijaHacks Hackathon 2018](https://naijahacks.com/)
+
+- Andrew - [@koolamusic](https://twitter.com/koolamusic) 
+- Chidera - [@dexious](https://twitter.com/talk2dera) 
+- Emmanuel - [@peoray](https://twitter.com/super_raay) 
