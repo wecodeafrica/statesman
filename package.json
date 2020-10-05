@@ -6,7 +6,14 @@
 	"repository": "https://github.com/wecodeafrica/stateman.git",
 	"license": "MIT",
 	"scripts": {
+		"setup:api": "cd api && yarn install",
+		"setup:client": "cd client && yarn install",
+		"setup:all": "yarn setup:api && yarn setup:client",
 		"start:api": "cd api && yarn dev",
-		"start:client": "cd clien && yarn dev"
+		"start:client": "cd client && yarn dev",
+		"start:all": "concurrently 'yarn start:api' 'yarn start:client'"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0"
 	}
 }
