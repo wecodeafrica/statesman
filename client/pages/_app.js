@@ -1,6 +1,5 @@
 import { Box, ChakraProvider } from '@chakra-ui/core';
 import { ThemeProvider } from 'styled-components';
-import '../styles/globals.css';
 import { theme } from '../theme/theme';
 
 function MyApp({ Component, pageProps }) {
