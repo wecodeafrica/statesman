@@ -1,0 +1,50 @@
+{
+  "user": {
+    "id": "jBWMVGjm50l6LGwepDoty",
+    "username": "frontendmaster"
+  },
+  "pet": [
+    {
+      "id": "1KgEflajoirCzd-ND_gqI",
+      "createdAt": 1597326171275,
+      "name": "Ruba",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "edBjrKIEzW5KkV7vVZ3dC",
+      "createdAt": 1597328938657,
+      "name": "Jandex",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "bV8G5EMfUoLISQpiF453u",
+      "createdAt": 1597336516219,
+      "name": "Malone",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "puzSBJJE9DSNjTy-xfwyK",
+      "createdAt": 1597337056832,
+      "name": "Redmond",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "FNT9lhOAbAmJLjpOmB8an",
+      "createdAt": 1597337107902,
+      "name": "Cola",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "OLdtgUi48My5SsXJnsY7N",
+      "createdAt": 1597338357438,
+      "name": "Eugene",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    }
+  ]
+}

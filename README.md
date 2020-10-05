@@ -1,35 +1,12 @@
-# Our Stateman
-The stateman project
+# Fullstack GraphQL
+> Learn how to use GraphQL with Node and React
 
-[![Total 
-alerts](https://img.shields.io/lgtm/alerts/g/koolamusic/statesman.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g//statesman/alerts/)
-
+This course comes with some [slides](https://docs.google.com/presentation/d/1IrGA4PtUEZPVDTBg5_WCMmUapElbFBgLwfSBAp8ft1g/edit?usp=sharing)
 
 
-### Problem 🔥🔥🔥
-Political Manifestos are mostly untrue, most politicians provide the mass 
-with fake background information about themselves and document Manifestos 
-that they are not willing to fulfill
+## What you'll need
+* Node version >= 6
 
-### Proposed Solution
-- A platform that allows the general public source information about a statesman in their locality, 
-- Check and validate their bio information
-- Maintain a track record of their political manifestos
-
-
-### Team
-
-- Andrew - [@koolamusic](https://twitter.com/koolamusic) 
-
-
-### Quick Links
-
-https://en.wikipedia.org/wiki/States_of_Nigeria
-
-https://www.inecnigeria.org/inec-lga-offices/
-
-https://www.inecnigeria.org/elections/election-results/
-
-https://www.inecnigeria.org/political-parties/constitutions-manifestos/
-
-[https://www.shineyoureye.org/](Markdown)
+## Solutions
+The solution branch has the completed course fo reference. There is no one way to finish this course.
+`git checkout solution`

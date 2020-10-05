@@ -1,35 +1,51 @@
 {
-  "name": "omalicha",
-  "version": "1.0.0",
-  "description": "## TeamOmalicha 🔥🔥🔥",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "node  app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koolamusic/naijahacks-teamOmalicha.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/koolamusic/naijahacks-teamOmalicha/issues"
-  },
-  "homepage": "https://github.com/koolamusic/naijahacks-teamOmalicha#readme",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.3",
-    "dotenv": "^6.0.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "joi": "^13.6.0",
-    "mongoose": "^5.2.17",
-    "morgan": "^1.9.0",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "@apollo/react-hooks": "^3.1.2",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
+    "apollo-server": "^2.9.6",
+    "babel-plugin-emotion": "^10.0.21",
+    "flexboxgrid": "^6.3.1",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "json5": "^2.1.0",
+    "lowdb": "^1.0.0",
+    "nanoid": "^2.1.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-select": "^3.0.8",
+    "react-spinners": "^0.6.1"
+  },
+  "scripts": {
+    "server": "node api/src/server.js",
+    "app": "parcel client/index.html --out-dir client/dist",
+    "test-server": "jest api/tests"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@playlyfe/gql": "^2.6.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^24.9.0",
+    "parcel": "^1.12.3"
   }
 }
