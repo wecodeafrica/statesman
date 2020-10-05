@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Grid } from "@components/Box";
 import { Bold } from "@components/Typography";
-import Searchbar from "@components/Searchbar";
+import { HeaderLayout } from '@components/Layout'
 
 /* Locally scoped component styles */
 import { HeaderStyles } from "./styles";
@@ -9,28 +9,30 @@ import { HeaderStyles } from "./styles";
 const Search = () => {
   return (
     <HeaderStyles>
-      <Flex
-        justifyContent="flex-start"
-        flexWrap="nowrap"
-        className="header-wrap"
-        width="88%"
-      >
-        <Bold color="#EC2C22" bold className="header-logo">
-          LOGO
+      <HeaderLayout>
+
+        <Flex
+          justifyContent="flex-start"
+          flexWrap="nowrap"
+          className="header-wrap"
+          width="100%"
+        >
+          <Bold fontSize color="#EC2C22" bold className="header-logo">
+            Statesman
         </Bold>
 
-        <Searchbar className="searchbar-container" />
 
-        <div className="header-links-container">
-          <Grid className="header-menu" gap="3px" />
-          <ul className="header-links">
-            <li>HOME</li>
-            <li>MORE</li>
-            <li>DESIGN</li>
-            <li>FOLLOW</li>
-          </ul>
-        </div>
-      </Flex>
+          <div className="header-links-container">
+            <Grid className="header-menu" gap="3px" />
+            <ul className="header-links">
+              <li>Browse</li>
+              <li>Countries</li>
+              <li>Offices</li>
+              <li>Contributors</li>
+            </ul>
+          </div>
+        </Flex>
+      </HeaderLayout>
     </HeaderStyles>
   );
   ``;

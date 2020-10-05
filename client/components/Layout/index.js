@@ -13,9 +13,11 @@ const padding = {
 const Layout = styled.div`
     padding-left: ${padding.normal};
     padding-right: ${padding.normal};
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
 
-* + * { 
-    /* Using the lobotomized owl to ensure consistency vertical hierachy */
+section + section { 
     margin-top: 1.5rem;
 }
 `
@@ -24,6 +26,24 @@ const Layout = styled.div`
 export const HeaderLayout = styled.header`
     padding-left: ${padding.normal};
     padding-right: ${padding.normal};
+`
+
+
+export const Line = styled.div`
+    min-width: 100%;
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -${padding.normal};
+    height: 1px;
+    background: #ddd;
+`
+
+/* Quick hack to create a Padding Wrapper around components */
+export const Spacing = styled.div`
+    padding-top: ${props => props.pt ? props.pt : '50px'};
+    padding-bottom: ${props => props.pb ? props.pb : '50px'};
+
 `
 
 /* Export Layout */
