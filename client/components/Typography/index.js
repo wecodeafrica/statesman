@@ -49,7 +49,7 @@ export const H5 = styled.h5`
   }
 `;
 
-export const P = styled.p`
+export const Paragraph = styled.p`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 0.95rem;
   font-weight: ${({ bold, weight }) =>
@@ -59,7 +59,7 @@ export const P = styled.p`
     font-size: 0.8rem;
   }
 `;
-export const B = styled.b`
+export const Bold = styled.b`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 0.95rem;
   font-weight: bold;

@@ -1,13 +1,10 @@
 /*
- * component: FlexibleDiv
  * author: Eze Bernardine May
- * Date: April 16th, 2020
- * EmBED FlexibleDiv component
  */
 
 import styled from "styled-components";
 
-export const FlexibleDiv = styled('div')`
+export const Flex = styled('div')`
   display: flex;
   justify-content: ${({ justifyContent }) => justifyContent || "center"};
   align-items: ${({ alignItems }) => alignItems || "center"};
@@ -23,7 +20,7 @@ export const FlexibleDiv = styled('div')`
   padding: ${({ padding }) => padding || null};
 `;
 
-export const GridableDiv = styled('div')`
+export const Grid = styled('div')`
   display: grid;
   grid-template-columns: ${(props) => props.gridCol || "1fr"};
   grid-template-rows: ${(props) => props.gridRow || "auto"};
