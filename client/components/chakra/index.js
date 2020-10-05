@@ -4,7 +4,7 @@
  * Theming, Dark Mode etc
  */
 
-import { Flex, Box } from '@chakra-ui/core'
+import { Flex, FlexProps, Box } from '@chakra-ui/core'
 
 
 /**
