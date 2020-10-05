@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { SearchStyles } from "./styles";
 import { SearchIcon, DropdownIcon } from "@assets/svg/index";
 import { Flex } from "@components/Box";
+
+/* Locally scoped component styles */
+import { SearchStyles } from "./styles";
 
 const Search = () => {
   const [searching, setSearching] = useState(false);

@@ -3,6 +3,7 @@ import { Flex, Grid } from "@components/Box";
 import { Bold } from "@components/Typography";
 import Searchbar from "@components/Searchbar";
 
+/* Locally scoped component styles */
 import { HeaderStyles } from "./styles";
 
 const Search = () => {
@@ -21,11 +22,7 @@ const Search = () => {
         <Searchbar className="searchbar-container" />
 
         <div className="header-links-container">
-          <Grid className="header-menu" gap="3px">
-            <div></div>
-            <div></div>
-            <div></div>
-          </Grid>
+          <Grid className="header-menu" gap="3px" />
           <ul className="header-links">
             <li>HOME</li>
             <li>MORE</li>
