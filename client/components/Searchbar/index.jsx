@@ -1,14 +1,16 @@
-import react, { useState } from "react";
-import { SearchStyles } from "./styles";
+import React, { useState } from "react";
 import { SearchIcon, DropdownIcon } from "@assets/svg/index";
-import { FlexibleDiv } from "../Box/styles";
+import { Flex } from "@components/Box";
+
+/* Locally scoped component styles */
+import { SearchStyles } from "./styles";
 
 const Search = () => {
   const [searching, setSearching] = useState(false);
 
   return (
     <SearchStyles className="searchbar-container" searching={searching}>
-      <FlexibleDiv justifyContent="space-between" flexWrap="nowrap">
+      <Flex justifyContent="space-between" flexWrap="nowrap">
         <div className="searchicon-container">
           <SearchIcon
             className="searchIcon"
@@ -30,7 +32,7 @@ const Search = () => {
             width="20px"
           />
         </div>
-      </FlexibleDiv>
+      </Flex>
     </SearchStyles>
   );
   ``;

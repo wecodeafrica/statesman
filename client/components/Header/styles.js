@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const HeaderStyles = styled.div`
   background: white;
   width: 100%;
-  box-shadow: 0 2px 5px 1px #ecebeb;
+      justify-content: space-between;
+  border-bottom: 1px solid #ddd;
   .header-wrap {
     height: 62px;
-    margin: 0 6%;
     @media (max-width: 850px) {
       justify-content: space-around;
     }
@@ -45,9 +45,11 @@ export const HeaderStyles = styled.div`
       display: inline-flex;
       & > li {
         list-style-type: none;
-        margin: 0 10px;
         font-weight: 600;
         color: #ec2c22;
+      }
+      li + li {
+        padding-left: 1rem;
       }
       @media (max-width: 850px) {
         display: none;

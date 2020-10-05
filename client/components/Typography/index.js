@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const H1 = styled.h1`
+export const HeadingOne = styled.h1`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 2rem;
   font-weight: ${({ bold, weight }) =>
@@ -10,7 +10,7 @@ export const H1 = styled.h1`
   }
 `;
 
-export const H2 = styled.h3`
+export const HeadingTwo = styled.h2`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 1.7rem;
   font-weight: ${({ bold, weight }) =>
@@ -20,7 +20,7 @@ export const H2 = styled.h3`
   }
 `;
 
-export const H3 = styled.h3`
+export const HeadingThree = styled.h3`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 1.4rem;
   font-weight: ${({ bold, weight }) =>
@@ -30,7 +30,7 @@ export const H3 = styled.h3`
   }
 `;
 
-export const H4 = styled.h4`
+export const HeadingFour = styled.h4`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-weight: ${({ bold, weight }) =>
     weight ? weight : bold ? "bold" : "500"};
@@ -39,7 +39,7 @@ export const H4 = styled.h4`
     font-size: 0.9rem;
   }
 `;
-export const H5 = styled.h5`
+export const HeadingFive = styled.h5`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-weight: ${({ bold, weight }) =>
     weight ? weight : bold ? "bold" : "500"};
@@ -49,7 +49,7 @@ export const H5 = styled.h5`
   }
 `;
 
-export const P = styled.p`
+export const Paragraph = styled.p`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 0.95rem;
   font-weight: ${({ bold, weight }) =>
@@ -59,7 +59,7 @@ export const P = styled.p`
     font-size: 0.8rem;
   }
 `;
-export const B = styled.b`
+export const Bold = styled.b`
   color: ${({ color }) => (color ? color : " #7c7c7c")};
   font-size: 0.95rem;
   font-weight: bold;

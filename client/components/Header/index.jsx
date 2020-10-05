@@ -1,38 +1,38 @@
 import React from "react";
+import { Flex, Grid } from "@components/Box";
+import { Bold } from "@components/Typography";
+import { HeaderLayout } from '@components/Layout'
+
+/* Locally scoped component styles */
 import { HeaderStyles } from "./styles";
-import { FlexibleDiv, GridableDiv } from "../Box/styles";
-import Searchbar from "../Searchbar";
-import { B } from "../FontSize/styles";
 
 const Search = () => {
   return (
     <HeaderStyles>
-      <FlexibleDiv
-        justifyContent="flex-start"
-        flexWrap="nowrap"
-        className="header-wrap"
-        width="88%"
-      >
-        <B color="#EC2C22" bold className="header-logo">
-          LOGO
-        </B>
+      <HeaderLayout>
 
-        <Searchbar className="searchbar-container" />
+        <Flex
+          justifyContent="flex-start"
+          flexWrap="nowrap"
+          className="header-wrap"
+          width="100%"
+        >
+          <Bold fontSize color="#EC2C22" bold className="header-logo">
+            Statesman
+        </Bold>
 
-        <div className="header-links-container">
-          <GridableDiv className="header-menu" gap="3px">
-            <div></div>
-            <div></div>
-            <div></div>
-          </GridableDiv>
-          <ul className="header-links">
-            <li>HOME</li>
-            <li>MORE</li>
-            <li>DESIGN</li>
-            <li>FOLLOW</li>
-          </ul>
-        </div>
-      </FlexibleDiv>
+
+          <div className="header-links-container">
+            <Grid className="header-menu" gap="3px" />
+            <ul className="header-links">
+              <li>Browse</li>
+              <li>Countries</li>
+              <li>Offices</li>
+              <li>Contributors</li>
+            </ul>
+          </div>
+        </Flex>
+      </HeaderLayout>
     </HeaderStyles>
   );
   ``;

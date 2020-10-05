@@ -18,7 +18,7 @@ export const theme = extendTheme({
         lineHeight: 'tall',
       },
       a: {
-        color: props.colorMode === 'dark' ? 'teal.300' : 'teal.500',
+        color: props.colorMode === 'dark' ? 'red.300' : 'red.500',
       },
     }),
   },

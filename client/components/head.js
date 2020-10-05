@@ -4,7 +4,7 @@ import GoogleFonts from 'next-google-fonts';
 
 export const Head = ({ children, title }) => (
   <React.Fragment>
-    <GoogleFonts href='https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800;900&display=swap' />
+    <GoogleFonts href='https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap' />
     <NextHead>
       <meta charSet='UTF-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
