@@ -1,0 +1,12 @@
+{
+	"name": "statesman",
+	"version": "1.0.0",
+	"description": "A Public Archive of Political Manifestos from elected officials",
+	"main": "index.js",
+	"repository": "https://github.com/wecodeafrica/stateman.git",
+	"license": "MIT",
+	"scripts": {
+		"start:api": "cd api && yarn dev",
+		"start:client": "cd clien && yarn dev"
+	}
+}
