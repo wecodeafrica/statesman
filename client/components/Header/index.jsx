@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { HeaderStyles } from "./styles";
 import { FlexibleDiv, GridableDiv } from "../Box/styles";
 import Searchbar from "../Searchbar";

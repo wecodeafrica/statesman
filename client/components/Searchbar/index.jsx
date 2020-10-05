@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import { SearchStyles } from "./styles";
-import { SearchIcon, DropdownIcon } from "../../assets/svg";
+import { SearchIcon, DropdownIcon } from "@assets/svg/index";
 import { FlexibleDiv } from "../Box/styles";
 
 const Search = () => {

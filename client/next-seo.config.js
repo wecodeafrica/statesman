@@ -1,11 +1,11 @@
 export default {
-  title: 'Home | Stateman',
-  description: 'Stateman Description',
+  title: 'Home | Stasteman',
+  description: 'Statesman Description',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
     description: 'Description',
-    url: 'https://www.stateman.com',
+    url: 'https://www.statesman.africa',
     site_name: 'Stateman',
     images: [
       {
@@ -17,8 +17,8 @@ export default {
     ],
   },
   twitter: {
-    handle: '@stateman',
-    site: '@stateman',
+    handle: '@wecodecommunity',
+    site: '@wecodecommunity',
     cardType: 'summary_large_image',
   },
 };
