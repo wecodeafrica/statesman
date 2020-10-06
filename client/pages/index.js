@@ -1,5 +1,3 @@
-import React from 'react'
-import Header from '@components/Header'
 import {
   Box,
   Button,
@@ -7,30 +5,34 @@ import {
   Divider,
   Flex,
   Heading,
-  Input,
-  Text
-} from '@chakra-ui/core'
-import PeopleCard from '@components/Cards/PeopleCard'
-import RoundedIcon from '@components/Utils/RoundedIcon'
-import { ArrowLeft, ArrowRight } from 'theme/customIcons'
+  Text,
+} from '@chakra-ui/core';
+import CountryCard from '@components/Cards/CountryCard';
+import PeopleCard from '@components/Cards/PeopleCard';
+import Search from '@components/Searchbar';
+import RoundedIcon from '@components/Utils/RoundedIcon';
+import Axios from 'axios';
+import { ArrowLeft, ArrowRight } from 'theme/customIcons';
 
-export default function Home () {
+export default function Home() {
+  const [data, setData] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      const res = await Axios.get(
+        'https://restcountries.eu/rest/v2/region/africa'
+      );
+      setData(res.data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <React.Fragment>
-      <Header />
-
       <Container maxW='xl' py={32} overflowX='hidden'>
-        <form>
-          <Box my={14}>
-            <Input
-              placeholder='search for head of state in africa'
-              h={14}
-              borderColor='gray.600'
-              _hover={{ borderColor: 'brand.light' }}
-              _focus={{ borderColor: 'brand.dark' }}
-            />
-          </Box>
-        </form>
+        <Box mt={14} mb={24}>
+          <Search />
+        </Box>
 
         <Box maxW={120} mx='auto' textAlign='center' mb={12}>
           <Text color='gray.400' fontSize='lg' fontWeight={600}>
@@ -52,12 +54,12 @@ export default function Home () {
             shadowColor='rgba(0,0,0,.4)'
             zIndex={10}
           />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
+          <PeopleCard mr={6} />
+          <PeopleCard mr={6} />
+          <PeopleCard mr={6} />
           <PeopleCard />
           <RoundedIcon
-            right={0}
+            right={-4}
             icon={ArrowRight}
             bg='white'
             _hover={{ bg: 'brand.dark', color: 'white' }}
@@ -73,6 +75,22 @@ export default function Home () {
             explore more people
           </Button>
         </Flex>
+
+        <Divider my={20} />
+
+        <Box>
+          <Box maxW={115} mx='auto' textAlign='center' mb={12}>
+            <Heading as='h3' fontWeight={900} fontSize='4xl'>
+              Find Head of States by Country
+            </Heading>
+          </Box>
+
+          <Flex>
+            {data.slice(0, 5).map((item) => (
+              <CountryCard item={item} mr={4} />
+            ))}
+          </Flex>
+        </Box>
 
         <Divider my={20} />
 
@@ -106,5 +124,5 @@ export default function Home () {
         </Box>
       </Container>
     </React.Fragment>
-  )
+  );
 }

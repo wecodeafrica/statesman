@@ -1,5 +1,16 @@
-import { Box, Container, Grid, Heading, Text } from '@chakra-ui/core'
-import PeopleCard from '@components/Cards/PeopleCard'
+import {
+  Box,
+  Container,
+  Flex,
+  FormControl,
+  Grid,
+  Heading,
+  Input,
+  Text,
+} from '@chakra-ui/core';
+import PeopleCard from '@components/Cards/PeopleCard';
+import Search from '@components/Searchbar';
+import Select from '@components/Select';
 
 const Browse = () => {
   return (
@@ -20,23 +31,34 @@ const Browse = () => {
           </Text>
         </Box>
 
-        <Grid templateColumns={{ md: 'repeat(4, 1fr)' }} gap={{ md: 2 }}>
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
-          <PeopleCard />
+        <Box
+          rounded='lg'
+          bg='white'
+          w='100%'
+          shadow='md'
+          p={{ md: 6 }}
+          my={{ md: 20 }}
+        >
+          <Search />
+        </Box>
+
+        <Grid templateColumns={{ md: 'repeat(4, 1fr)' }} gap={{ md: 4 }}>
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
+          <PeopleCard width={75} />
         </Grid>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Browse
+export default Browse;

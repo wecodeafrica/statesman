@@ -1,13 +1,13 @@
-import React from 'react'
-import { Box, Heading, Image, Text, Flex, Icon } from '@chakra-ui/core'
-import { ArrowRight, BriefCase } from 'theme/customIcons'
+import React from 'react';
+import { Box, Heading, Image, Text, Flex, Icon } from '@chakra-ui/core';
+import { ArrowRight, BriefCase } from 'theme/customIcons';
 
-const PeopleCard = () => {
+const PeopleCard = ({ mr, width }) => {
   return (
     <Box
       h={110}
-      w={80}
-      mr={4}
+      w={width || 80}
+      mr={mr}
       pos='relative'
       overflow='hidden'
       rounded='20px'
@@ -23,7 +23,7 @@ const PeopleCard = () => {
         bg='linear-gradient(to bottom, rgba(0,0,0,.1) 50%, rgba(0,0,0,.4) 70%)'
         _hover={{
           bg:
-            'linear-gradient(to bottom, rgba(0,0,0,.2) 30%, rgba(0,0,0,.5) 70%)'
+            'linear-gradient(to bottom, rgba(0,0,0,.2) 30%, rgba(0,0,0,.5) 70%)',
         }}
         transition='background-color 350ms ease-in'
       />
@@ -87,7 +87,7 @@ const PeopleCard = () => {
         </Flex>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default PeopleCard
+export default PeopleCard;

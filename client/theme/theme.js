@@ -1,26 +1,26 @@
-import { extendTheme } from '@chakra-ui/core'
+import { extendTheme } from '@chakra-ui/core';
 
-const breakpoints = ['30em', '48em', '62em', '80em']
+const breakpoints = ['30em', '48em', '62em', '80em'];
 // aliases
-breakpoints.sm = breakpoints[0]
-breakpoints.md = breakpoints[1]
-breakpoints.lg = breakpoints[2]
-breakpoints.xl = breakpoints[3]
+breakpoints.sm = breakpoints[0];
+breakpoints.md = breakpoints[1];
+breakpoints.lg = breakpoints[2];
+breakpoints.xl = breakpoints[3];
 
 export const theme = extendTheme({
   styles: {
-    global: props => ({
+    global: (props) => ({
       body: {
         fontSize: 'sm',
         fontFamily: '"Inter", sans-serif',
         color: props.colorMode === 'dark' ? '#E2E8F0' : 'gray.800',
         bg: props.colorMode === 'dark' ? '#1A202C' : 'white',
-        lineHeight: 'tall'
+        lineHeight: 'tall',
       },
       a: {
-        color: props.colorMode === 'dark' ? 'red.300' : 'red.500'
-      }
-    })
+        color: props.colorMode === 'dark' ? 'red.300' : 'red.500',
+      },
+    }),
   },
   ...breakpoints,
   fonts: {
@@ -28,28 +28,29 @@ export const theme = extendTheme({
     bold: '"Inter", sans-serif',
     medium: '"Inter", sans-serif',
     light: '"Inter", sans-serif',
-    body: '"Inter", sans-serif'
+    body: '"Inter", sans-serif',
   },
   fontSizes: {
     xx: '.55rem',
     tiny: '.68rem',
     '7xl': '5rem',
-    '8xl': '6rem'
+    '8xl': '6rem',
   },
   colors: {
     brand: {
       light: '#ec2c22',
-      dark: '#dc1d13'
+      dark: '#dc1d13',
     },
     orange: {
       500: '#ec2c22',
-      600: '#dc1d13'
-    }
+      600: '#dc1d13',
+    },
   },
   space: {
     14: '3.5rem',
     60: '15rem',
     70: '18rem',
+    75: '19rem',
     80: '20rem',
     85: '23rem',
     87: '24rem',
@@ -64,12 +65,13 @@ export const theme = extendTheme({
     130: '55rem',
     135: '60rem',
     140: '70rem',
-    145: '76rem'
+    145: '76rem',
   },
   sizes: {
     14: '3.5rem',
     60: '15rem',
     70: '18rem',
+    75: '19rem',
     80: '20rem',
     85: '23rem',
     87: '24rem',
@@ -84,6 +86,6 @@ export const theme = extendTheme({
     130: '55rem',
     135: '60rem',
     140: '70rem',
-    145: '76rem'
-  }
-})
+    145: '76rem',
+  },
+});
