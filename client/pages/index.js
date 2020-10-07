@@ -1,78 +1,128 @@
-import React from 'react'
-import Header from "@components/Header";
-import LayoutStack, { Line, Spacing } from '@components/Layout'
-import { FlexWrapper, InputWrapper } from '@components/chakra'
-import { SmallCard } from '@components/cards'
-import { HeadingTwo, Paragraph } from '@components/Typography'
-
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Flex,
+  Heading,
+  Text,
+} from '@chakra-ui/core';
+import CountryCard from '@components/Cards/CountryCard';
+import PeopleCard from '@components/Cards/PeopleCard';
+import Search from '@components/Searchbar';
+import RoundedIcon from '@components/Utils/RoundedIcon';
+import Axios from 'axios';
+import { ArrowLeft, ArrowRight } from 'theme/customIcons';
 
 export default function Home() {
+  const [data, setData] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      const res = await Axios.get(
+        'https://restcountries.eu/rest/v2/region/africa'
+      );
+      setData(res.data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <React.Fragment>
+      <Container maxW='xl' py={32} overflowX='hidden'>
+        <Box mt={14} mb={24}>
+          <Search />
+        </Box>
 
-      <Header />
-      <LayoutStack>
-        <section>
-          <Spacing />
-          <HeadingTwo>Know your Statesman</HeadingTwo>
-          <Paragraph><bold>400</bold> Publicly available Manifestos of your elected politicians and statesmen</Paragraph>
-          <InputWrapper width="60%" placeholder="search" />
-          <select placeholder="Country"><option>Ghana</option></select>
-          <Spacing />
-        </section>
-        <Line />
+        <Box maxW={120} mx='auto' textAlign='center' mb={12}>
+          <Text color='gray.400' fontSize='lg' fontWeight={600}>
+            50+ personalities recently added
+          </Text>
+          <Heading as='h3' fontWeight={900} fontSize='4xl'>
+            Search, find Presidents and Head of States in Africa.
+          </Heading>
+        </Box>
 
-        <section>
-          <Spacing pt="0" />
-          <HeadingTwo>Meet your Head of States</HeadingTwo>
-          <FlexWrapper justify="space-between" flexWrap="wrap">
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-          </FlexWrapper>
-          <Spacing />
+        <Flex w='100%' align='center' pos='relative'>
+          <RoundedIcon
+            left={-4}
+            icon={ArrowLeft}
+            bg='white'
+            _hover={{ bg: 'brand.dark', color: 'white' }}
+            transition='250ms'
+            shadow='md'
+            shadowColor='rgba(0,0,0,.4)'
+            zIndex={10}
+          />
+          <PeopleCard mr={6} />
+          <PeopleCard mr={6} />
+          <PeopleCard mr={6} />
+          <PeopleCard />
+          <RoundedIcon
+            right={-4}
+            icon={ArrowRight}
+            bg='white'
+            _hover={{ bg: 'brand.dark', color: 'white' }}
+            transition='250ms'
+            shadow='md'
+            shadowColor='rgba(0,0,0,.4)'
+            zIndex={10}
+          />
+        </Flex>
 
-          <img /> {/* Component Cards to render Head of States Components */}
-        </section>
-        <Line />
+        <Flex align='center' justify='center' mt={10}>
+          <Button colorScheme='orange' w={80} h={12}>
+            explore more people
+          </Button>
+        </Flex>
 
+        <Divider my={20} />
 
-        <section>
-          <Spacing pt="0" />
-          <HeadingTwo>Countries</HeadingTwo>
-          <FlexWrapper justify="space-between" flexWrap="wrap">
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-            <SmallCard />
-          </FlexWrapper>
+        <Box>
+          <Box maxW={115} mx='auto' textAlign='center' mb={12}>
+            <Heading as='h3' fontWeight={900} fontSize='4xl'>
+              Find Head of States by Country
+            </Heading>
+          </Box>
 
-          <img /> {/* Components to render Countries Flag */}
-          <Spacing />
-        </section>
-        <Line />
+          <Flex>
+            {data.slice(0, 5).map((item) => (
+              <CountryCard item={item} mr={4} />
+            ))}
+          </Flex>
+        </Box>
 
-        <section>
-          <Spacing pt="0" />
-          <HeadingTwo>Why Statesman</HeadingTwo>
-          <Paragraph>Information in a democratic government should be open, inclusive and truthful </Paragraph>
-          <Paragraph>Political Manifestos are the foundations of any political campaign
-          , most political candidates use this to set out a vision for what results their period in office will yield
-          While most manifestos for smaller candidates stay internal, some are heavily distributed for top states positions
-            Here are statesman, we want to maintain a publicly aggregated API of <strong>Publicly Elected Officials</strong>
-            Their History, Backgrounds and Origins, years spent in service and achievements as they correlate to their Manifesto
-            It's safe to say that we want to keep them accountable to the <strong>KPIs</strong> They've set for themselves before
-            being elected into Office. <br />
-            Contributing to this archive is easy if you have a Github account, Our goal is that the API grows to be a verifiable data source
-            for future references, predictions, data scientists, educators etc who would find these aggregated data to be useful.
-        </Paragraph>
-          <Spacing />
-        </section>
+        <Divider my={20} />
 
-
-
-      </LayoutStack>
+        <Box color='gray.600' fontSize='md'>
+          <Heading as='h3' fontSize={{ md: '3xl' }} mb={4}>
+            Why Statesman
+          </Heading>
+          <Text>
+            Information in a democratic government should be open, inclusive and
+            truthful{' '}
+          </Text>
+          <Text>
+            Political Manifestos are the foundations of any political campaign ,
+            most political candidates use this to set out a vision for what
+            results their period in office will yield While most manifestos for
+            smaller candidates stay internal, some are heavily distributed for
+            top states positions Here are statesman, we want to maintain a
+            publicly aggregated API of{' '}
+            <strong>Publicly Elected Officials</strong>
+            Their History, Backgrounds and Origins, years spent in service and
+            achievements as they correlate to their Manifesto It's safe to say
+            that we want to keep them accountable to the <strong>
+              KPIs
+            </strong>{' '}
+            They've set for themselves before being elected into Office. <br />
+            Contributing to this archive is easy if you have a Github account,
+            Our goal is that the API grows to be a verifiable data source for
+            future references, predictions, data scientists, educators etc who
+            would find these aggregated data to be useful.
+          </Text>
+        </Box>
+      </Container>
     </React.Fragment>
   );
 }

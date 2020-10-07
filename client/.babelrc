@@ -5,11 +5,11 @@
       "ssr": true
     }],
     ["module-resolver", {
-        "root": ["./"],
-        "alias": {
-          "@components": "./components",
-          "@assets": "./public/assets"
-        }
-      }]
+      "root": ["./"],
+      "alias": {
+        "@components": "./components",
+        "@assets": "./public/assets"
+      }
+    }]
   ]
 }
