@@ -1643,7 +1643,7 @@
 "@next/react-dev-overlay@9.5.4":
   version "9.5.4"
   resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.5.4.tgz#7d88a710d23021020cca213bc77106df18950b2b"
-  integrity sha512-tYvNmOQ0inykSvcimkTiONMv4ZyFB2G2clsy9FKLLRZ2OA+Jiov6T7Pq6YpKbBwTLu/BQGVc7Qn4BZ5CDHR8ig==
+
   dependencies:
     "@babel/code-frame" "7.10.4"
     ally.js "1.4.1"

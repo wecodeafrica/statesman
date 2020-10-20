@@ -11,21 +11,11 @@ import CountryCard from '@components/Cards/CountryCard';
 import PeopleCard from '@components/Cards/PeopleCard';
 import Search from '@components/Searchbar';
 import RoundedIcon from '@components/Utils/RoundedIcon';
-import Axios from 'axios';
 import { ArrowLeft, ArrowRight } from 'theme/customIcons';
+import { resources } from 'utils/resources';
 
 export default function Home() {
-  const [data, setData] = React.useState([]);
-
-  React.useEffect(() => {
-    const fetchData = async () => {
-      const res = await Axios.get(
-        'https://restcountries.eu/rest/v2/region/africa'
-      );
-      setData(res.data);
-    };
-    fetchData();
-  }, []);
+  const { data } = resources();
 
   return (
     <React.Fragment>

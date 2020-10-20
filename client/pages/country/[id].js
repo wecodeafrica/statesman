@@ -1,11 +1,8 @@
 import { Box, Container, Grid, Heading, Text } from '@chakra-ui/core';
 import PeopleCard from '@components/Cards/PeopleCard';
 import Search from '@components/Searchbar';
-import { useRouter } from 'next/router';
 
 const Country = () => {
-  const router = useRouter();
-  const { id } = router.query;
   return (
     <Container maxW='xl' py={{ md: 48 }}>
       <Box maxW={120} mx='auto' textAlign='center' mb={12}>

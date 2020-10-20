@@ -1,19 +1,9 @@
 import { Container, Grid } from '@chakra-ui/core';
 import CountryCard from '@components/Cards/CountryCard';
-import Axios from 'axios';
+import { resources } from 'utils/resources';
 
 const countries = () => {
-  const [data, setData] = React.useState([]);
-
-  React.useEffect(() => {
-    const fetchData = async () => {
-      const res = await Axios.get(
-        'https://restcountries.eu/rest/v2/region/africa'
-      );
-      setData(res.data);
-    };
-    fetchData();
-  }, []);
+  const { data } = resources();
 
   return (
     <Container maxW='xl' py={{ md: 48 }}>
