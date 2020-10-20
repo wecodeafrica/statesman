@@ -36,10 +36,21 @@ export const theme = extendTheme({
     '7xl': '5rem',
     '8xl': '6rem',
   },
+  colors: {
+    brand: {
+      light: '#ec2c22',
+      dark: '#dc1d13',
+    },
+    orange: {
+      500: '#ec2c22',
+      600: '#dc1d13',
+    },
+  },
   space: {
     14: '3.5rem',
     60: '15rem',
     70: '18rem',
+    75: '19rem',
     80: '20rem',
     85: '23rem',
     87: '24rem',
@@ -60,6 +71,7 @@ export const theme = extendTheme({
     14: '3.5rem',
     60: '15rem',
     70: '18rem',
+    75: '19rem',
     80: '20rem',
     85: '23rem',
     87: '24rem',
